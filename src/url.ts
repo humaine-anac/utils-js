@@ -5,13 +5,18 @@ export type UrlOptions = {
   path?: string;
 };
 
-export function optionsToUrl(options: UrlOptions): string {
-  const protocol = options.protocol || 'http';
-  let url = protocol + '://' + options.host;
+export function optionsToUrl(options: UrlOptions, path?: string): string {
+  let url = options.protocol || 'http';
+  url += '://' + options.host;
+
   if (options.port) {
     url += ':' + options.port;
   }
-  if (options.path) {
+
+  if (path) {
+    url += path;
+  }
+  else if (options.path) {
     url  += options.path;
   }
   return url;
