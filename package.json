@@ -1,6 +1,6 @@
 {
   "name": "@humaine/utils",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Utility library for NodeJS applications",
   "main": "index.js",
   "scripts": {
