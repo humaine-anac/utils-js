@@ -1,6 +1,6 @@
-# repository
+# @humaine/utils
 
-A template repository
+A utility library for the HUMAINE applications.
 
 ## Setup
 
@@ -10,8 +10,14 @@ npm install
 
 ## Usage
 
-```bash
-npm start
+```typescript
+import { quantize } from '@humaine-utils/math'
+
+quantize(1.324, 2); // 1.32
+
+import { optionsToUrl } from '@humaine-utils/url';
+
+optionsToUrl({host: 'localhost'}); // http://localhost
 ```
 
 ## Contributing
