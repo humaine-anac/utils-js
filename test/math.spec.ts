@@ -12,7 +12,7 @@ describe('test quantize method', () => {
       [1234.5, 0, 1235],
       [1234.5, 1, 1234.5],
     ]
-  )('.quantize(%i, %i) === %i', (a, b, expected): void => {
+  )('.quantize(%d, %i) === %d', (a, b, expected): void => {
     expect(quantize(a, b)).toBe(expected);
   });
 });
